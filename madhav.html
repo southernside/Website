@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/southernside%20logo_color.png">
+    <meta name="description"
+        content="Madhav Manu loa
+        ad - Founder of SouthernSide & Frameverse. Designer, Developer, and AI Integration Specialist based in Kerala.">
+    <title>Madhav Manu | Founder of SouthernSide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --brand-orange: #FF6B35;
+            --brand-pink: #D4145A;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(to right, var(--brand-orange), var(--brand-pink));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid-bg {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .blob {
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background: linear-gradient(var(--brand-orange), var(--brand-pink));
+            filter: blur(120px);
+            opacity: 0.15;
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+            will-change: transform;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+        }
+
+        .skill-tag {
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="blob" id="cursor-blob"></div>
+    <div class="fixed inset-0 grid-bg z-0"></div>
+
+    <div class="relative z-10">
+        <nav class="p-6 md:p-10 max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="group flex items-center gap-2 font-bold text-xl tracking-tighter">
+                <span class="text-orange-500 group-hover:-translate-x-1 transition-transform">←</span>
+                SouthernSide
+            </a>
+            <div class="flex gap-4">
+                <a href="https://www.linkedin.com/in/madhav-manu-ab8b13399/"
+                    class="text-gray-400 hover:text-white transition text-xs font-bold uppercase tracking-widest">LinkedIn</a>
+                <a href="https://www.instagram.com/5yung.krshn/"
+                    class="text-gray-400 hover:text-white transition text-xs font-bold uppercase tracking-widest">Instagram</a>
+            </div>
+        </nav>
+
+        <main class="max-w-7xl mx-auto px-6 pt-10 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
+
+                <div class="md:col-span-5 md:sticky md:top-10 h-fit">
+                    <div class="relative group reveal">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-orange-500 to-pink-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                        </div>
+                        <div
+                            class="relative rounded-[2.2rem] overflow-hidden border border-white/10 glass-card aspect-[4/5] shadow-2xl">
+                            <img src="assets/madhav.png" alt="Madhav Manu"
+                                class="w-full h-full object-cover  hover:grayscale-0 transition duration-1000">
+
+                            <div
+                                class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-2xl border border-white/10 backdrop-blur-xl">
+                                <p class="text-[10px] uppercase tracking-[0.2em] font-black text-orange-500 mb-1">
+                                    Current Focus</p>
+                                <p class="text-xs font-medium text-white flex items-center gap-2">
+                                    AI Automation & Civic-Tech
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 grid grid-cols-2 gap-4 reveal" style="animation-delay: 0.2s;">
+                        <div class="glass-card p-4 rounded-2xl border border-white/5">
+                            <p class="text-white text-xs font-bold mb-1 underline decoration-orange-500/50">SCERT Kerala
+                            </p>
+                            <p class="text-[9px] uppercase text-gray-500 font-bold tracking-widest">Computer Science</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl border border-white/5">
+                            <p class="text-white text-xs font-bold mb-1">3+ Years</p>
+                            <p class="text-[9px] uppercase text-gray-500 font-bold tracking-widest">Design Exp.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 space-y-16">
+
+                    <section class="reveal" style="animation-delay: 0.3s;">
+                        <h4 class="text-orange-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-6">Designer,
+                            Developer, Builder</h4>
+                        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-8">
+                            Madhav Manu. <br>
+                            <span class="brand-gradient">AI-First Design.</span>
+                        </h1>
+                        <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+                            I am a Kerala-based designer and developer working at the intersection of **technical
+                            reasoning** and **aesthetic purpose**. I build intelligent systems and modern web
+                            experiences that turn friction into flow.
+                        </p>
+                    </section>
+
+                    <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal" style="animation-delay: 0.4s;">
+                        <div class="p-8 rounded-3xl glass-card border border-white/5">
+                            <h3 class="text-white font-bold text-lg mb-4 flex items-center gap-3">
+                                <span class="w-6 h-6 flex-shrink-0">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="g-eye" x1="0" y1="0" x2="24" y2="24"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0%" stop-color="#FF6B35" />
+                                                <stop offset="100%" stop-color="#D4145A" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="M12 5C7 5 2.73 8.11 1 12.5C2.73 16.89 7 20 12 20C17 20 21.27 16.89 23 12.5C21.27 8.11 17 5 12 5ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5ZM12 10.5C10.9 10.5 10 11.4 10 12.5C10 13.6 10.9 14.5 12 14.5C13.1 14.5 14 13.6 14 12.5C14 11.4 13.1 10.5 12 10.5Z"
+                                            fill="url(#g-eye)" />
+                                    </svg>
+                                </span>
+                                Visual Storytelling
+                            </h3>
+                            <p class="text-sm text-gray-500 leading-relaxed mb-6">3+ years as a freelance editor. A deep
+                                understanding of how motion, design, and technology command attention.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Ae</span> <span class="skill-tag">Pr</span> <span
+                                    class="skill-tag">Blender</span>
+                            </div>
+                        </div>
+                        <div class="p-8 rounded-3xl glass-card border border-white/5">
+                            <h3 class="text-white font-bold text-lg mb-4 flex items-center gap-3">
+                                <span class="w-6 h-6 flex-shrink-0">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="g-brain" x1="0" y1="0" x2="24" y2="24"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop offset="0%" stop-color="#FF6B35" />
+                                                <stop offset="100%" stop-color="#D4145A" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM15.65 16.35L14.94 17.06L12 14.12L9.06 17.06L8.35 16.35L11.29 13.41L8.35 10.47L9.06 9.76L12 12.7L14.94 9.76L15.65 10.47L12.71 13.41L15.65 16.35Z"
+                                            fill="url(#g-brain)" opacity="0.3" />
+                                        <path
+                                            d="M9 13C10.1046 13 11 12.1046 11 11C11 9.89543 10.1046 9 9 9C7.89543 9 7 9.89543 7 11C7 12.1046 7.89543 13 9 13Z"
+                                            fill="url(#g-brain)" />
+                                        <path
+                                            d="M15 13C16.1046 13 17 12.1046 17 11C17 9.89543 16.1046 9 15 9C13.8954 9 13 9.89543 13 11C13 12.1046 13.8954 13 15 13Z"
+                                            fill="url(#g-brain)" />
+                                        <path
+                                            d="M12 18C13.6569 18 15 16.6569 15 15C15 13.3431 13.6569 12 12 12C10.3431 12 9 13.3431 9 15C9 16.6569 10.3431 18 12 18Z"
+                                            fill="url(#g-brain)" />
+                                    </svg>
+                                </span>
+                                Intelligent Systems
+                            </h3>
+                            <p class="text-sm text-gray-500 leading-relaxed mb-6">Building AI-powered automation that
+                                simplifies complex services and business workflows.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">n8n</span> <span class="skill-tag">Make</span> <span
+                                    class="skill-tag">Python</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="reveal space-y-8" style="animation-delay: 0.5s;">
+                        <h4 class="text-orange-500 font-bold uppercase tracking-[0.4em] text-[10px]">Venture_Founder
+                        </h4>
+
+                        <div class="glass-card rounded-[2.5rem] overflow-hidden border border-white/10 group p-1">
+                            <div class="relative bg-[#080808] rounded-[2.3rem] p-8 md:p-12">
+                                <div class="flex flex-col md:flex-row gap-10 items-center">
+
+                                    <div class="flex-1 space-y-6">
+                                        <div class="flex items-center gap-3">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                                            <span
+                                                class="text-[10px] uppercase tracking-widest font-black text-gray-500">Flagship
+                                                Studio</span>
+                                        </div>
+
+                                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter">
+                                            Founder of <span class="brand-gradient">Frameverse.</span>
+                                        </h2>
+
+                                        <p class="text-gray-400 text-lg leading-relaxed">
+                                            Beyond Southernside, I lead <span class="text-white font-medium">Frameverse
+                                                Studio</span>—a creative production house dedicated to high-impact
+                                            motion design and visual storytelling. We bridge the gap between complex
+                                            brand narratives and cinematic execution.
+                                        </p>
+
+                                        <div class="pt-4">
+                                            <a href="https://frameverse-studio.github.io/frameverse-website/"
+                                                target="_blank"
+                                                class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all text-xs font-bold uppercase tracking-widest">
+                                                Explore Frameverse
+                                                <span class="text-orange-500">↗</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full md:w-64 space-y-4">
+                                        <div class="glass-card p-6 rounded-2xl border border-white/5 bg-white/5">
+                                            <p
+                                                class="text-[9px] uppercase text-gray-500 font-bold tracking-widest mb-2">
+                                                Role</p>
+                                            <p class="text-white font-bold">Creative Director</p>
+                                        </div>
+                                        <div class="glass-card p-6 rounded-2xl border border-white/5">
+                                            <p
+                                                class="text-[9px] uppercase text-gray-500 font-bold tracking-widest mb-2">
+                                                Status</p>
+                                            <p class="text-white font-bold flex items-center gap-2">
+                                                Scaling
+                                                <span
+                                                    class="text-[10px] bg-orange-500/20 text-orange-500 px-2 py-0.5 rounded">v2.0</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="space-y-6 text-gray-400 text-lg leading-relaxed reveal"
+                        style="animation-delay: 0.5s;">
+                        <h3
+                            class="text-2xl font-bold text-white mb-4 italic tracking-tight underline decoration-orange-500 decoration-2 underline-offset-8">
+                            "Innovation with Civic Purpose."</h3>
+                        <p>
+                            What sets my work apart is a focus on **real-world impact**. I am particularly interested in
+                            civic-tech—building products that improve accessibility for everyday users.
+                        </p>
+                        <p>
+                            Initiatives like <span class="text-white font-medium">Sahayi AI</span> reflect this
+                            direction: human-centred, language-friendly, and practical by design. I approach every
+                            project with the balance of design sensitivity and scalable technical logic.
+                        </p>
+
+                        <div class="pt-10">
+                            <a href="https://wa.me/917510383501" target="_blank"
+                                class="group relative inline-flex items-center gap-4 bg-white text-black px-10 py-5 rounded-2xl font-black text-lg overflow-hidden transition-all active:scale-95">
+                                <span class="relative z-10">Contact Me</span>
+                                <span class="transition-transform group-hover:translate-x-2">→</span>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="py-12 border-t border-white/5 text-center">
+            <p class="text-[10px] text-gray-600 uppercase tracking-[0.5em]">Madhav Manu • Kerala, India • 2026</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth Cursor Movement
+        const blob = document.getElementById('cursor-blob');
+        let curX = 0, curY = 0, tgX = 0, tgY = 0;
+        window.addEventListener('mousemove', (e) => { tgX = e.clientX; tgY = e.clientY; });
+
+        function animate() {
+            curX += (tgX - curX) * 0.1;
+            curY += (tgY - curY) * 0.1;
+            blob.style.transform = `translate3d(${curX - 200}px, ${curY - 200}px, 0)`;
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // Reveal Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.classList.add('reveal');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
