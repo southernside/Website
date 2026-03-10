@@ -748,7 +748,7 @@
         }
 
         .btn-grad {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--purple));
             color: #FFFFFF;
             font-family: 'Barlow Condensed', sans-serif;
             font-size: 0.72rem;
@@ -1019,9 +1019,11 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
+            /* Shift to top to avoid large centered gaps */
             background: #0A0A0A;
-            padding: 4rem 0;
+            padding: 8rem 0 4rem;
+            /* Increased top padding for better sticky clearance */
             overflow: hidden;
         }
 
@@ -2723,9 +2725,8 @@
                 <a href="madhav.html" target="_blank">Founder</a>
             </div>
 
-            <a href="registration-form.html" class="btn-grad"
-                onclick="if(window.triggerPageExit) return triggerPageExit('registration-form.html');">Join a Free
-                Class</a>
+            <a href="events.html" class="btn-grad"
+                onclick="if(window.triggerPageExit) return triggerPageExit('events.html');">Events</a>
             <a href="#booking" class="top-nav__cta" style="margin-left: 10px;">Get Started</a>
 
             <button class="hamburger" id="mobileMenuBtn" aria-label="Open menu">
@@ -2842,7 +2843,7 @@
 
     <!-- ───────────────────── MISSION PARALLAX ───────────────────── -->
     <section id="mission" class="parallax-section"
-        style="background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/madhav.png');">
+        style="background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('assets/southernside%20logo_color.png');">
         <div class="section-wrap">
             <h2 class="parallax-text display reveal reveal--blur" id="parallaxMission">
                 Every student deserves to understand the tools that will define their career.
@@ -2987,7 +2988,7 @@
                         Suite</span>
                     <h2 class="section-heading reveal reveal--blur"
                         style="font-size: clamp(2rem, 5.5vw, 4.5rem); max-width: 900px;">
-                        From classrooms to<br>government infrastructure.
+                        From classrooms to<br>corporate ecosystems.
                     </h2>
                 </div>
 
@@ -3074,37 +3075,35 @@
                             <span class="tag service-card__tag">Deployment</span>
                         </div>
                     </div>
-                    <!-- Government Solutions – wide -->
+                    <!-- Enterprise Intelligence – wide -->
                     <div class="service-card service-card--wide">
                         <div style="display:flex; flex-wrap:wrap; gap:3rem; align-items:flex-start;">
                             <div class="service-card__icon">
                                 <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <defs>
-                                        <linearGradient id="g-govt" x1="0" y1="0" x2="48" y2="48"
+                                        <linearGradient id="g-ent" x1="0" y1="0" x2="48" y2="48"
                                             gradientUnits="userSpaceOnUse">
                                             <stop offset="0%" stop-color="#FF6B35" />
                                             <stop offset="50%" stop-color="#D4145A" />
                                             <stop offset="100%" stop-color="#8B5CF6" />
                                         </linearGradient>
                                     </defs>
-                                    <path d="M6 40h36M6 20h36" stroke="url(#g-govt)" stroke-width="2.5"
-                                        stroke-linecap="round" />
-                                    <path d="M24 6L6 20h36L24 6z" stroke="url(#g-govt)" stroke-width="2.5"
+                                    <path d="M4 42h40M8 42V14l12-8v36M20 42V18l12-4v28M32 42V22l8-2v22"
+                                        stroke="url(#g-ent)" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
-                                    <rect x="10" y="20" width="5" height="20" stroke="url(#g-govt)" stroke-width="2" />
-                                    <rect x="21.5" y="20" width="5" height="20" stroke="url(#g-govt)"
-                                        stroke-width="2" />
-                                    <rect x="33" y="20" width="5" height="20" stroke="url(#g-govt)" stroke-width="2" />
+                                    <rect x="12" y="14" width="4" height="4" fill="url(#g-ent)" fill-opacity="0.3" />
+                                    <rect x="12" y="24" width="4" height="4" fill="url(#g-ent)" fill-opacity="0.3" />
+                                    <rect x="24" y="20" width="4" height="4" fill="url(#g-ent)" fill-opacity="0.3" />
                                 </svg>
                             </div>
                             <div style="flex:1; min-width: 200px;">
-                                <h4 class="service-card__title">Government Solutions</h4>
-                                <p class="service-card__text">Multilingual public-service chatbots designed for local
-                                    context and citizen trust. Built for scale, built for India.</p>
+                                <h4 class="service-card__title">Enterprise Intelligence</h4>
+                                <p class="service-card__text">Advanced AI solutions for enterprise automation, enhancing
+                                    operational efficiency and decision-making. Built for global scale.</p>
                                 <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
-                                    <span class="tag service-card__tag">Local Languages</span>
-                                    <span class="tag service-card__tag">Public Safety</span>
-                                    <span class="tag service-card__tag">Civic Tech</span>
+                                    <span class="tag service-card__tag">Workflow Automation</span>
+                                    <span class="tag service-card__tag">Data Intelligence</span>
+                                    <span class="tag service-card__tag">Custom LLMs</span>
                                 </div>
                             </div>
                         </div>
@@ -3283,7 +3282,7 @@
         <section id="globe-section">
             <div class="globe-central-wrap">
                 <h2 class="section-heading reveal reveal--blur">
-                    Visionary<br><span class="accent-gradient">Network.</span>
+                    Tools That <br><span class="accent-gradient">We Teach.</span>
                 </h2>
             </div>
             <div class="globe-scene">
@@ -3350,11 +3349,23 @@
                             const size = Math.floor(minSize + Math.random() * sizeRange);
                             panel.style.setProperty('--size', `${size}px`);
 
-                            const imgCount = 5; // We have ai-1.png to ai-5.png
-                            const imgIndex = (i % imgCount) + 1;
+                            // Actual tool logos
+                            const toolLogos = [
+                                'assets/ai tool logo/ChatGPT_logo.svg',
+                                'assets/ai tool logo/chatgpt-icon.png',
+                                'assets/ai tool logo/claude-ai-icon.png',
+                                'assets/ai tool logo/google-gemini-icon.png',
+                                'assets/ai tool logo/grok-icon.webp',
+                                'assets/ai tool logo/lovable-icon-bg-dark.png',
+                                'assets/ai tool logo/perplexity-ai-icon.png',
+                                'assets/ai tool logo/qwenlm-app-logo-nn3O555231.webp',
+                                'assets/ai tool logo/1_5dLYmr4gc9YdmDAWlVJ5hw.jpg',
+                                'assets/ai tool logo/1_Ypy3BnIpxE0PAAwyMzkENQ.png'
+                            ];
+                            const logoIndex = i % toolLogos.length;
                             const img = document.createElement('img');
-                            img.src = `assets/ai-${imgIndex}.png`;
-                            img.alt = 'AI Technology';
+                            img.src = toolLogos[logoIndex];
+                            img.alt = 'AI Tool Logo';
                             img.loading = 'lazy';
 
                             panel.appendChild(img);
@@ -3509,12 +3520,11 @@
                             </svg>
                         </div>
                         <div class="activity-item__title" style="color: #10b981;">Strategic Partnerships</div>
-                        <p style="font-size: 0.9rem; color: #888; line-height: 1.65; margin-bottom: 1rem;">Active
-                            outreach to Kerala's state educational bodies and <strong>Little Kite</strong> to co-deliver
-                            workshops at district scale.</p>
+                        <p style="font-size: 0.9rem; color: #888; line-height: 1.65; margin-bottom: 1rem;">Strategic
+                            collaborations with leading educational institutions and industry experts to co-deliver
+                            workshops at scale.</p>
                         <div style="display:flex; gap:1rem; flex-wrap: wrap;">
-                            <span class="tag">Little Kite</span>
-                            <span class="tag">Govt of Kerala</span>
+                            <span class="tag">Industry Partners</span>
                         </div>
                     </div>
                 </div>
@@ -3632,8 +3642,8 @@
                             <div class="label" style="color:#999; margin-bottom:0.4rem;">Email</div>
                             <div
                                 style="font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size: clamp(0.8rem, 2.5vw, 1.05rem);">
-                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                    data-cfemail="0b78647e7f636e796578626f6e383a383e6a624b6c666a626725686466">[email&#160;protected]</a>
+                                <a href="mailto:southernside3135ai@gmail.com"
+                                    style="text-decoration: none; color: inherit;">southernside3135ai@gmail.com</a>
                             </div>
                         </div>
                     </div>
@@ -3652,7 +3662,7 @@
                             <option>School AI Awareness</option>
                             <option>Professional Training</option>
                             <option>AI Consulting</option>
-                            <option>Government Chatbots</option>
+                            <option>Enterprise AI Solutions</option>
                         </select>
                         <textarea name="requirements" placeholder="Tell us about your requirements..." rows="5" required
                             class="form-field"></textarea>
